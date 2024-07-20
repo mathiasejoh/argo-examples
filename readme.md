@@ -1,9 +1,3 @@
-
-
-# Follow this video to be a ArgoCD Boss
-https://youtu.be/JLrR9RV9AFA
-
-
 # Installing latest/stable version of ArgoCD
 ```
 kubectl create namespace argocd
@@ -24,6 +18,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 # Install ArgoCD CLI / Login via CLI
 ```
 brew install argocd
+choco install argocd-cli
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 argocd login 127.0.0.1:8080
 ```
